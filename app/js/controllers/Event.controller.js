@@ -8,6 +8,13 @@ function EventController ($scope){
   $scope.event = {
     name: 'Angular Boot Camp',
     date: '24/03/2016',
-    time: '11:23 am'
+    time: '11:23 am',
+    location: {
+      address: 'Google Headquarters',
+      city: 'Mountain View',
+      province: 'CA'
+    },
+    imgUrl: '/img/angularjs-logo.png'
+
   }
 }

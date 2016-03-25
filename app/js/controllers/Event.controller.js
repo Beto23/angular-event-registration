@@ -5,6 +5,8 @@ EventController.Inject=['$scope']
 
 function EventController ($scope){
   console.log('EventController');
+  $scope.snippet = '<span style="color:blue;">hi there</span>'
+  $scope.boolValue = false;
   $scope.event = {
     name: 'Angular Boot Camp',
     date: '24/03/2016',

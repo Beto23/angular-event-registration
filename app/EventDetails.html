@@ -8,7 +8,11 @@
 </head>
 <body>
   <div class="container">
-    <div ng-controller="EventController"></div>
+    <div ng-controller="EventController">
+      {{event.name}} <br>
+      {{event.date}} <br>
+      {{event.time}}
+    </div>
   </div>
   <script src="/lib/jquery.min.js"></script>
   <script src="/lib/underscore-1.4.4.min.js"></script>

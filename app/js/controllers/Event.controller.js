@@ -14,7 +14,30 @@ function EventController ($scope){
       city: 'Mountain View',
       province: 'CA'
     },
-    imgUrl: '/img/angularjs-logo.png'
+    imgUrl: '/img/angularjs-logo.png',
+    sessions:[
+      {
+        name: 'Directives MasterClass',
+        creatorName: 'Bob Smith',
+        duration: '1hr',
+        level: 'Advanced',
+        abstract: 'In this session you will learn the ins and outs of directives!'
+      },
+      {
+        name: 'Scope for fun and profit',
+        creatorName: 'Jhon Doe',
+        duration: '30mins',
+        level: 'Introductory',
+        abstract: 'This session will take a closer look at Scope. Learn what they do, how they do it, and how to get them to do it for you'
+      },
+      {
+        name: 'Well Behaved Controllers',
+        creatorName: 'Jhon Doe',
+        duration: '2 hours',
+        level: 'Intermediate',
+        abstract: 'Controllers are the beginning of everything Angular does Learn how to craf controllers that will win the repect of your friends and neighbors'
+      }
+    ]
 
   }
 }

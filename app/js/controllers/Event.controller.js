@@ -8,6 +8,7 @@ function EventController ($scope){
   $scope.snippet = '<span style="color:blue;">hi there</span>';
   $scope.boolValue = false;
   $scope.mystyle = {color:'red'};
+  $scope.myclass = 'blue';
   $scope.event = {
     name: 'Angular Boot Camp',
     date: '24/03/2016',

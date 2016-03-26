@@ -8,7 +8,7 @@ function EventController ($scope){
   $scope.sortorder = 'name'
   $scope.event = {
     name: 'Angular Boot Camp',
-    date: '23443534523',
+    date: '25/03/2016',
     time: '11:23 am',
     location: {
       address: 'Google Headquarters',

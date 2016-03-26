@@ -18,7 +18,7 @@ function EventController ($scope){
     imgUrl: '/img/angularjs-logo.png',
     sessions:[
       {
-        name: 'Directives MasterClass',
+        name: 'Directives MasterClass Introductory',
         creatorName: 'Bob Smith',
         duration: '1hr',
         level: 'Advanced',

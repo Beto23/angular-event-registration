@@ -5,6 +5,7 @@ EventController.Inject=['$scope']
 
 function EventController ($scope){
   console.log('EventController');
+  $scope.sortorder = 'name'
   $scope.event = {
     name: 'Angular Boot Camp',
     date: '23443534523',

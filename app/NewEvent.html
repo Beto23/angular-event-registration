@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="eventsApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav">
+
+        </ul>
+      </div>
+    </div>
+    <div ng-controller="EditEventController"  style="padding-left:20px; padding-right:20px">
+      <div class="container">
+        <h1>New Event</h1>
+        <hr>
+        <form>
+          <fieldset>
+            <label for="eventName">Event Name:</label>
+            <input ng-model="event.name" type="text" id="eventName" placeholder="Name for your event..">
+            <label for="eventDate">Event Date:</label>
+            <input ng-model="event.date" type="text" id="eventDate" placeholder="Format (mm/dd/yyyy)...">
+            <label for="eventTime">Event Time:</label>
+            <input ng-model="event.time" type="text" id="eventTime" placeholder="start and end time...">
+            <label for="evenLocation">Event Location:</label>
+            <input ng-model="event.location" type="text" id="evenLocation" placeholder="Address of event...">
+            <br>
+            <input ng-model="event.location.city" type="text" id="eventCity" class="input-samll" placeholder="City...">
+            <input ng-model="event.location.province" type="text" id="eventProvice" class="input-samll" placeholder="Province...">
+
+            <label for="eventImageUrl">Image</label>
+            <input ng-model="event.imageUrl" type="url" id="eventImageUrl" class="input-xlarge" placeholder="Url of imgage...">
+          </fieldset>
+          <img ng-src="{{ event.imageUrl }}">
+          <br>
+          <br>
+
+          <button type="submit" ng-click="saveEvent(event)" class="btn btn-prmary">Save</button>
+          <button type="button" ng-click="canvelEdit()" class="btn btn-default">Cancel</button>
+
+        </form>
+      </div>
+    </div>
+</div>
+  <script src="/lib/jquery.min.js"></script>
+  <script src="/lib/underscore-1.4.4.min.js"></script>
+  <script src="/lib/bootstrap.min.js"></script>
+  <script src="/lib/angular/angular.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/controllers/Event.controller.js"></script>
+  <script src="/js/controllers/EditEvent.controller.js"></script>
+  <script src="/js/filters.js"></script>
+</body>
+</html>
